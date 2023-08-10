@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "PORT=5005 node server.js",
+    "dev": "node server.js",
     "dev-proxy": "next dev & npx local-ssl-proxy --source 5005 --target 3000 --key ./localhost.key --cert ./localhost.crt",
     "build": "next build",
     "start": "next start",
