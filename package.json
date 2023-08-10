@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=5005 node server.js",
+    "dev-proxy": "next dev & npx local-ssl-proxy --source 5005 --target 3000 --key ./localhost.key --cert ./localhost.crt",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fidm/x509": "1.2.1",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "framer-motion": "latest",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  }
+}
